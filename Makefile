@@ -17,3 +17,8 @@ set_eeschema_onedark:
 	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
 	@grep -v \# eeschema_onedark.cfg >> $(EESCHEMA_CFG_PATH)
 
+.PHONY: set_eeschema_nord
+set_eeschema_nord:
+	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
+	@grep -v \# eeschema_nord.cfg >> $(EESCHEMA_CFG_PATH)
+
