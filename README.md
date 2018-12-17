@@ -30,4 +30,3 @@ using the same `kit-dev-coldfire-xilinx_5213` project as `pointhi`.
 ## TODO
 
 * Linux support
-* Auto-generate scheme from [pywal](https://github.com/dylanaraps/pywal)?
