@@ -10,15 +10,15 @@ show_current:
 .PHONY: set_eeschema_default
 set_eeschema_default:
 	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
-	@cat eeschema_default.cfg >> $(EESCHEMA_CFG_PATH)
+	@cat ./default/eeschema_default.cfg >> $(EESCHEMA_CFG_PATH)
 
 .PHONY: set_eeschema_onedark
 set_eeschema_onedark:
 	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
-	@grep -v \# eeschema_onedark.cfg >> $(EESCHEMA_CFG_PATH)
+	@grep -v \# ./onedark/eeschema_onedark.cfg >> $(EESCHEMA_CFG_PATH)
 
 .PHONY: set_eeschema_nord
 set_eeschema_nord:
 	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
-	@grep -v \# eeschema_nord.cfg >> $(EESCHEMA_CFG_PATH)
+	@grep -v \# ./nord/eeschema_nord.cfg >> $(EESCHEMA_CFG_PATH)
 

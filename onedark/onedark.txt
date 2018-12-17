@@ -1,0 +1,30 @@
+" vim: ft=vim
+" OneDark Colorscheme Calculations
+" values from https://github.com/arcticicestudio/nord-vim/blob/develop/colors/nord.vim
+
+" black
+let g:terminal_color_0 = "#282c34" => rgb(40, 44, 52)
+let g:terminal_color_8 = "#282c34"
+" red
+let g:terminal_color_1 = "#e06c75" => rgb(224, 108, 117)
+let g:terminal_color_9 = "#e06c75"
+" green
+let g:terminal_color_2 = "#98c379" => rgb(152, 195, 121)
+let g:terminal_color_10 = "#98c379"
+" yellow
+let g:terminal_color_3 = "#e5c07b" => rgb(229, 192, 123)
+let g:terminal_color_11 = "#e5c07b"
+" blue
+let g:terminal_color_4 = "#61afef" => rgb(97, 175, 239)
+let g:terminal_color_12 = "#61afef"
+" purple
+let g:terminal_color_5 = "#c678dd" => rgb(198, 120, 221)
+let g:terminal_color_13 = "#c678dd"
+" cyan
+let g:terminal_color_6 = "#56b6c2" => rgb(86, 182, 194)
+let g:terminal_color_14 = "#56b6c2"
+" white
+let g:terminal_color_7 = "#dcdfe4" => rgb(220, 223, 228)
+let g:terminal_color_15 = "#dcdfe4"
+" cursor_line
+let s:cursor_line = "#313640" => rgb(49, 54, 64)

@@ -1,0 +1,28 @@
+" vim: ft=vim
+" Nord Colorscheme Calculations
+" values from https://github.com/arcticicestudio/nord-vim/blob/develop/colors/nord.vim
+
+" black / dark_gray
+terminal_color_0 = "#3B4252" => rgb(59, 66, 82)
+terminal_color_8 = "#4C566A" => rgb(76, 86, 106)
+" red
+terminal_color_1 = "#BF616A" => rgb(191, 97, 106)
+terminal_color_9 = "#BF616A"
+" green
+terminal_color_2 = "#A3BE8C" => rgb(163, 190, 140)
+terminal_color_10 = "#A3BE8C"
+" yellow
+terminal_color_3 = "#EBCB8B" => rgb(235, 203, 139)
+terminal_color_11 = "#EBCB8B"
+" blue
+terminal_color_4 = "#81A1C1" => rgb(129, 161, 193)
+terminal_color_12 = "#81A1C1"
+" magenta
+terminal_color_5 = "#B48EAD" => rgb(180, 142, 173)
+terminal_color_13 = "#B48EAD"
+" aqua / cyan
+terminal_color_6 = "#88C0D0" => rgb(136, 192, 208)
+terminal_color_14 = "#8FBCBB" => rgb(143, 188, 187)
+" light_gray / white
+terminal_color_7 = "#E5E9F0" => rgb(229, 233, 240)
+terminal_color_15 = "#ECEFF4" => rgb(236, 239, 244)

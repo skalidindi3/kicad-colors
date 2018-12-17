@@ -18,11 +18,11 @@ color-scheme                     | screenshot
 [eeschema_onedark][onedark_link] | ![eeschema_onedark][onedark_png_link]
 [eeschema_nord][nord_link]       | ![eeschema_nord][nord_png_link]
 
-[default_png_link]: https://raw.githubusercontent.com/skalidindi3/kicad-colors/master/eeschema_default.png
+[default_png_link]: https://raw.githubusercontent.com/skalidindi3/kicad-colors/master/default/eeschema_default.png
 [onedark_link]: https://github.com/sonph/onehalf/blob/master/vim/colors/onehalfdark.vim
-[onedark_png_link]: https://raw.githubusercontent.com/skalidindi3/kicad-colors/master/eeschema_onedark.png
+[onedark_png_link]: https://raw.githubusercontent.com/skalidindi3/kicad-colors/master/onedark/eeschema_onedark.png
 [nord_link]: https://github.com/arcticicestudio/nord-vim/blob/develop/colors/nord.vim
-[nord_png_link]: https://raw.githubusercontent.com/skalidindi3/kicad-colors/master/eeschema_nord.png
+[nord_png_link]: https://raw.githubusercontent.com/skalidindi3/kicad-colors/master/nord/eeschema_nord.png
 
 **NOTE:** Screenshots taken with a grid spacing of 50 mils and a selection area of 1280x900,
 using the same `kit-dev-coldfire-xilinx_5213` project as `pointhi`.
