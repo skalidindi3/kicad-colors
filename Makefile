@@ -22,3 +22,7 @@ set_eeschema_nord:
 	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
 	@grep -v \# ./nord/eeschema_nord.cfg >> $(EESCHEMA_CFG_PATH)
 
+set_base16_%: base16/%.cfg
+	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
+	@grep -v \# $< >> $(EESCHEMA_CFG_PATH)
+
