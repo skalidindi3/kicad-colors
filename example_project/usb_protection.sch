@@ -1,0 +1,95 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4950 2600 0    50   Input ~ 0
+USB_SIG
+Text HLabel 5050 2850 2    50   Input ~ 0
+FET_EN
+Text HLabel 5050 2950 2    50   Input ~ 0
+TRIP
+Text HLabel 5050 3050 2    50   Input ~ 0
+3A_MODE
+Text HLabel 5050 3150 2    50   Input ~ 0
+PLUG
+Wire Wire Line
+	5000 2850 5050 2850
+Wire Wire Line
+	5000 2950 5050 2950
+Wire Wire Line
+	5000 3050 5050 3050
+Wire Wire Line
+	5000 3150 5050 3150
+NoConn ~ 5000 2950
+NoConn ~ 5000 3050
+NoConn ~ 5000 3150
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5C1AF74F
+P 4800 2400
+F 0 "#FLG0102" H 4800 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 2574 50  0000 C CNN
+F 2 "" H 4800 2400 50  0001 C CNN
+F 3 "~" H 4800 2400 50  0001 C CNN
+	1    4800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5C1AF794
+P 5100 2400
+F 0 "#PWR0104" H 5100 2250 50  0001 C CNN
+F 1 "+5V" H 5115 2573 50  0000 C CNN
+F 2 "" H 5100 2400 50  0001 C CNN
+F 3 "" H 5100 2400 50  0001 C CNN
+	1    5100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2400 5100 2400
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5C1AF7D6
+P 4400 2400
+F 0 "#FLG0103" H 4400 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 4400 2574 50  0000 C CNN
+F 2 "" H 4400 2400 50  0001 C CNN
+F 3 "~" H 4400 2400 50  0001 C CNN
+	1    4400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5C1AF837
+P 4400 2500
+F 0 "#PWR0105" H 4400 2250 50  0001 C CNN
+F 1 "GND" H 4405 2327 50  0000 C CNN
+F 2 "" H 4400 2500 50  0001 C CNN
+F 3 "" H 4400 2500 50  0001 C CNN
+	1    4400 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 2400 4400 2500
+Entry Wire Line
+	5050 2600 5150 2700
+Entry Wire Line
+	5250 2600 5350 2700
+Text Label 5150 2700 0    50   ~ 0
+D-
+Text Label 5350 2700 0    50   ~ 0
+D+
+Wire Bus Line
+	4950 2600 5250 2600
+$EndSCHEMATC

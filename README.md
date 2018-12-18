@@ -24,9 +24,6 @@ color-scheme                     | screenshot
 [nord_link]: https://github.com/arcticicestudio/nord-vim/blob/develop/colors/nord.vim
 [nord_png_link]: https://raw.githubusercontent.com/skalidindi3/kicad-colors/master/nord/eeschema_nord.png
 
-**NOTE:** Screenshots taken with a grid spacing of 50 mils and a selection area of 1280x900,
-using the same `kit-dev-coldfire-xilinx_5213` project as `pointhi`.
-
 ## TODO
 
 * Linux support
