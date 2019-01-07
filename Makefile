@@ -1,6 +1,14 @@
 # TODO: switch on macOS vs Linux
 
-EESCHEMA_CFG_PATH=~/Library/Preferences/kicad/eeschema
+ifeq ($(shell uname -s),Darwin)
+  EESCHEMA_CFG_PATH=~/Library/Preferences/kicad/eeschema
+  SED_IN_PLACE=sed -i ''
+else
+  ifeq ($(shell uname -s),Linux)
+    EESCHEMA_CFG_PATH=~/.config/kicad/eeschema
+    SED_IN_PLACE=sed -i''
+  endif
+endif
 
 .PHONY: show_current
 show_current:
@@ -9,20 +17,20 @@ show_current:
 
 .PHONY: set_eeschema_default
 set_eeschema_default:
-	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
+	@$(SED_IN_PLACE) "/Color4D/d" $(EESCHEMA_CFG_PATH)
 	@cat ./default/eeschema_default.cfg >> $(EESCHEMA_CFG_PATH)
 
 .PHONY: set_eeschema_onedark
 set_eeschema_onedark:
-	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
+	@$(SED_IN_PLACE) "/Color4D/d" $(EESCHEMA_CFG_PATH)
 	@grep -v \# ./onedark/eeschema_onedark.cfg >> $(EESCHEMA_CFG_PATH)
 
 .PHONY: set_eeschema_nord
 set_eeschema_nord:
-	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
+	@$(SED_IN_PLACE) "/Color4D/d" $(EESCHEMA_CFG_PATH)
 	@grep -v \# ./nord/eeschema_nord.cfg >> $(EESCHEMA_CFG_PATH)
 
 set_base16_%: base16/%.cfg
-	@sed -i "" "/Color4D/d" $(EESCHEMA_CFG_PATH)
+	@$(SED_IN_PLACE) "/Color4D/d" $(EESCHEMA_CFG_PATH)
 	@grep -v \# $< >> $(EESCHEMA_CFG_PATH)
 
