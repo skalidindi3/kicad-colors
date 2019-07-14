@@ -8,13 +8,13 @@ else
   endif
 endif
 
-.PHONY: get_current_eechema
-get_current_eechema:
+.PHONY: get_current_eeschema
+get_current_eeschema:
 	@echo "Reading current configuration from $(EESCHEMA_CFG_PATH):\n"
 	@grep Color4D $(EESCHEMA_CFG_PATH)
 
-.PHONY: show_eechema_options
-show_eechema_options:
+.PHONY: show_eeschema_options
+show_eeschema_options:
 	@ls eeschema/*.cfg \
 	  | sed "s/\//_/" \
 	  | sed "s/^/set_/" \
