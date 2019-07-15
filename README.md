@@ -22,7 +22,7 @@ Original idea & inspiration from https://github.com/pointhi/kicad-color-schemes
 
 ```bash
 # list available themes for eeschema
-$ make show_eechema_options
+$ make show_eeschema_options
 set_eeschema_base16_dracula
 set_eeschema_base16_nord
 set_eeschema_base16_oceanicnext
